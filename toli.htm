@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cable Managment</title>
+
+    <style>
+        *{ text-align: center;
+        }
+        body{ background: radial-gradient(circle at 50%, #ffff00, gold, goldenrod); border: 5px  black double;
+           }
+        #dummert{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPEjCKy3bUAzu6rqrTSg1NZ4lC6B0O68FZSw&usqp=CAU);
+            background-size: cover;
+        }
+        h2{-webkit-text-stroke: 0.1vmin blueviolet;}
+        header{ border: 3px solid salmon; 
+            background-color: antiquewhite;   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+        h1{font-size: 40px; -webkit-text-stroke: 1px goldenrod; color: yellow; background-color: bisque; margin-bottom: 0; margin-top: -0.1%;
+        border-bottom: 5px double black;}
+        p {font-size: 3.2vmin;  }
+        #ip { background-color: aliceblue; width: max-content; margin: 0 auto; border-radius: 10%; -webkit-text-stroke: 0.1vmin orangered;}
+        main{ background-color: #00ffff55; 
+            width: 50%; margin: 0 auto; border: 10px solid transparent;
+            border-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTijhpYUaq0m0IpZre7XBPNhCCOH_lxkdUI_Q&usqp=CAU) 10 round;}
+        button{ 
+            border: 2px solid red;
+            font-size: 100%; background-color: #ff0f0f55;
+            color: rebeccapurple; -webkit-text-stroke: 0.22vmin black; 
+            height: 20vw; width: 20vw; border-radius: 50%;
+            margin-bottom: 1vh; margin-top: 1vh;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+            #lordem{background-color: aliceblue; }
+        #lordem::after{
+                color: red; text-decoration: underline; background-color: wheat;
+                content: "“DON'T”";
+            }
+            footer { position: fixed; bottom: 0; width: 94%; background-size: contain; height: 20%; background-repeat: no-repeat;
+                background-image: url(https://raw.githubusercontent.com/Blood-web/Programs/77780e29cb83d13ce42979fd51e0fa99939c2549/Libs/New%20folder/BloodWeb.png);}
+    </style>
+
+
+</head>
+
+<body>
+  <header>
+        <h1>Cable Managment</h1>
+     <div id="dummert">     <p id="ip"> ( For Dummies )</p></div>
+    </header>
+    <button id="btn"> Reveal  <br> Steps: </button>
+    <main style="display: none;">
+        <h2> How to manage cables :</h2>
+        <p id="lordem"> Step 1: </p>
+
+        <button id="stepper">Next Step:</button>
+    </main>
+    <footer style="display: none;">
+        
+    </footer>
+<p style="opacity: 0.1;"> #peace&LOVE</p>
+
+<script>
+const selector = {
+btn:document.getElementById("btn"),
+step:document.getElementById("stepper"),
+main:document.getElementById("lordem"),
+tail:document.getElementsByTagName("FOOTER"),
+td:document.getElementsByTagName("MAIN"),
+}
+
+selector.btn.addEventListener("click", mainbuttonclick);
+function mainbuttonclick(){ alert("You are a poohead");
+    selector.btn.style.display="none"; selector.td[0].style.display="block";
+    selector.main.style.display=""; selector.tail[0].style.display="";
+}
+var x=0;
+selector.step.addEventListener("click",nextstep);
+function nextstep(){ 
+    x++; 
+    if(x==1){selector.main.innerText="Step 1: DO NOT\n"+"Step 2:";}
+    else if(x==2){selector.main.innerText="Step 1: NO BENOUS\n"+"Step 2: Negatory\n"+"Step 3:"; 
+    selector.step.style.fontSize="12px";
+    selector.step.innerText="Are you sure you really want to press it one more time?";}
+    else if(x==3){
+        window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";}
+}
+</script>
+</body>
+
+
+</html>
