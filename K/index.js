@@ -20,7 +20,6 @@ var fow=0;
 function Light(){
     if(fow=="0"){
         Title.innerText="The 🕯Sered🕯 Candle Collection ";
-  
         fow=1;
     }
     else if(fow=="1"){
